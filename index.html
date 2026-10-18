@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="theme-color" content="#08051a">
+    <meta name="color-scheme" content="dark">
+
+    <title>Sama Ashour — A Developer's Magical Journey</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Magical Background -->
+    <div class="scene">
+        <svg
+            id="sv"
+            viewBox="0 0 1000 600"
+            preserveAspectRatio="xMidYMax slice"
+        ></svg>
+
+        <div class="fog"></div>
+    </div>
+
+    <!-- Intro transition -->
+    <div id="veil"></div>
+
+    <!-- Particles -->
+    <canvas id="fx"></canvas>
+
+    <!-- SVG Definitions -->
+    <svg
+        width="0"
+        height="0"
+        style="position:absolute"
+        aria-hidden="true"
+    >
+        <defs>
+
+            <linearGradient id="hg">
+                <stop offset="0" stop-color="#fff3b0"/>
+                <stop offset=".5" stop-color="#ffd86b"/>
+                <stop offset="1" stop-color="#f7a84a"/>
+            </linearGradient>
+
+            <symbol id="braid" viewBox="0 0 1000 40">
+
+                <path
+                    d="M0 20C100 0 150 40 250 20S400 0 500 20 650 40 750 20 900 0 1000 20"
+                />
+
+                <path
+                    d="M0 20C100 40 150 0 250 20S400 40 500 20 650 0 750 20 900 40 1000 20"
+                    style="opacity:.7"
+                />
+
+            </symbol>
+
+        </defs>
+    </svg>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <div id="intro">
+
+        <div class="stage">
+
+            <p id="t1" class="ln">
+                Once Upon a Time…
+            </p>
+
+            <p id="t2" class="ln">
+                A Developer's Magical Journey
+            </p>
+
+            <div id="final">
+
+                <h1 id="t3" class="gold ln">
+                    Sama Ashour
+                </h1>
+
+                <p id="t4" class="ln">
+                    Front-End Developer | Creative Web Experiences
+                </p>
+
+                <button
+                    id="enter"
+                    class="btn ln"
+                    type="button"
+                >
+                    Enter My Kingdom
+                </button>
+
+            </div>
+
+        </div>
+
+        <button
+            id="skip"
+            type="button"
+        >
+            Skip Intro ›
+        </button>
+
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certificates</a>
+        <a href="#contact">Contact</a>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- HOME -->
+
+        <section id="home">
+
+            <p class="sub rv">
+                ✦ Welcome to my kingdom ✦
+            </p>
+
+            <h1
+                class="gold rv"
+                id="hn"
+            ></h1>
+
+            <p
+                class="sub rv"
+                id="hr"
+            ></p>
+
+            <p
+                class="meta rv"
+                id="hm"
+            ></p>
+
+            <div class="hero-buttons rv">
+
+                <a
+                    class="btn"
+                    href="#projects"
+                >
+                    Explore My Work
+                </a>
+
+                <a
+                    class="btn ghost"
+                    href="#contact"
+                >
+                    Send a Lantern
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <h2 class="rv">
+                The Story So Far
+            </h2>
+
+            <div class="about rv">
+
+                <div class="photo-wrap">
+
+                    <div
+                        class="photo"
+                        id="ph"
+                    >
+                        Your photo here
+                    </div>
+
+                </div>
+
+                <div
+                    class="card"
+                    id="ab"
+                ></div>
+
+            </div>
+
+            <svg
+                class="hair rv"
+                viewBox="0 0 1000 40"
+            >
+                <use href="#braid"></use>
+            </svg>
+
+        </section>
+
+
+        <!-- SKILLS -->
+
+        <section id="skills">
+
+            <h2 class="rv">
+                Enchanted Skills
+            </h2>
+
+            <div
+                class="chips rv"
+                id="sk"
+            ></div>
+
+            <h2
+                class="rv curiosity-title"
+            >
+                What Sparks My Curiosity
+            </h2>
+
+            <div
+                class="chips rv"
+                id="in"
+            ></div>
+
+            <svg
+                class="hair rv"
+                viewBox="0 0 1000 40"
+            >
+                <use href="#braid"></use>
+            </svg>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <h2 class="rv">
+                Quests & Projects
+            </h2>
+
+            <div
+                class="grid"
+                id="pj"
+            ></div>
+
+            <svg
+                class="hair rv"
+                viewBox="0 0 1000 40"
+            >
+                <use href="#braid"></use>
+            </svg>
+
+        </section>
+
+
+        <!-- CERTIFICATES -->
+
+        <section id="certs">
+
+            <h2 class="rv">
+                Royal Certificates
+            </h2>
+
+            <div
+                class="grid"
+                id="ce"
+            ></div>
+
+            <svg
+                class="hair rv"
+                viewBox="0 0 1000 40"
+            >
+                <use href="#braid"></use>
+            </svg>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section
+            id="contact"
+            class="contact"
+        >
+
+            <h2 class="rv">
+                Send a Floating Lantern
+            </h2>
+
+            <div
+                class="card rv contact-card"
+                id="ct"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        ✦ Crafted with a little magic by
+        <span id="fn"></span>
+        ✦
+
+        <br>
+
+        <small>
+            Original artwork & synthesized music — personal portfolio concept.
+        </small>
+
+    </footer>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <div
+        id="music"
+        aria-label="Music controls"
+    >
+
+        <button
+            id="pp"
+            title="Play / Pause"
+            type="button"
+        >
+            ♪
+        </button>
+
+        <button
+            id="mu"
+            title="Mute"
+            type="button"
+        >
+            🔊
+        </button>
+
+        <input
+            id="vol"
+            type="range"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+            aria-label="Volume"
+        >
+
+        <button
+            id="sx"
+            title="Sound effects on/off"
+            type="button"
+        >
+            ✨
+        </button>
+
+    </div>
+
+
+    <!-- Music -->
+    <audio
+        id="bgMusic"
+        loop
+        preload="auto"
+    >
+        <source src="assets/music/magic-music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/config.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/scene.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
